@@ -1,0 +1,111 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_sudoers: no
+configure_terminal: no
+configure_osx: yes
+configure_oh_my_zsh: yes
+
+configure_iterm: yes
+iterm2_overwite_configuration: no
+
+dotfiles_repo: https://github.com/blimmer/dotfiles
+dotfiles_repo_accept_hostkey: no
+dotfiles_repo_local_destination: ~/.dotfiles
+dotfiles_files:
+  - .gitconfig
+  - .gitignore_global
+  - .osx
+  - .tmux.conf
+  - .zshrc
+
+homebrew_installed_packages:
+  - ack
+  - awscli
+  - blackbox
+  - coreutils
+  - curl
+  - ffmpeg
+  - git
+  - gpg
+  - gpg-agent
+  - highlight
+  - hub
+  - sqlite
+  - mas
+  - npm
+  - nvm
+  - openssl
+  - phantomjs
+  - pinentry
+  - ssh-copy-id
+  - rbenv
+  - readline
+  - ruby-build
+  - s3cmd
+  - tmux
+  - tree
+  - wget
+  - zsh
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+  - caskroom/fonts
+  - homebrew/binary
+  - homebrew/dupes
+  - homebrew/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - atom
+  - dropbox
+  - firefox
+  - font-menlo-for-powerline
+  - google-chrome
+  - iterm2
+  - sequel-pro
+  - slack
+  - spotify
+  - the-unarchiver
+  - virtualbox
+
+dockitems_to_remove:
+  - Launchpad
+  - Mail
+  - Safari
+  - Contacts
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - Messages
+  - FaceTime
+  - iTunes
+  - iBooks
+  - App Store
+  - System Preferences
+  - Calendar
+
+dockitems_enabled:
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: Spotify
+    path: "/Applications/Spotify.app"
+    pos: 2
+  - name: Messages
+    path: "/Applications/Messages.app"
+    pos: 3
+  - name: Slack
+    path: "/Applications/Slack.app"
+    pos: 4
+  - name: Atom
+    path: "/Applications/Atom.app"
+    pos: 5
+  - name: Sequel Pro
+    path: "/Applications/Sequel Pro.app"
+    pos: 6
+  - name: iTerm
+    path: "/Applications/iTerm.app"
+    pos: 7
