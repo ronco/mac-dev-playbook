@@ -1,28 +1,31 @@
 ---
 downloads: ~/.ansible-downloads/
 
+configure_dotfiles: no
 configure_sudoers: no
 configure_terminal: no
 configure_osx: yes
 configure_oh_my_zsh: yes
+configure_emacs: yes
 
 configure_iterm: yes
 iterm2_overwite_configuration: no
 
-dotfiles_repo: https://github.com/blimmer/dotfiles
-dotfiles_repo_accept_hostkey: no
-dotfiles_repo_local_destination: ~/.dotfiles
-dotfiles_files:
-  - .gitconfig
-  - .gitignore_global
-  - .osx
-  - .tmux.conf
-  - .zshrc
+# dotfiles_repo: https://github.com/blimmer/dotfiles
+# dotfiles_repo_accept_hostkey: no
+# dotfiles_repo_local_destination: ~/.dotfiles
+# dotfiles_files:
+#   - .gitconfig
+#   - .gitignore_global
+#   - .osx
+#   - .tmux.conf
+#   - .zshrc
 
 homebrew_installed_packages:
   - ack
   - awscli
   - blackbox
+  - cask
   - coreutils
   - curl
   - ffmpeg

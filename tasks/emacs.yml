@@ -1,0 +1,23 @@
+---
+# emacs.yml
+
+- include: playbook.yml
+
+- name: Clone emacs-setup
+  git:
+    accept_hostkey: yes
+    recursive: yes
+    repo: https://github.com/ronco/emacs-setup.git
+    dest: ~/playbook/emacs-setup
+    update: no
+
+- name: Install emacs config
+  shell: >
+    ~/playbook/emacs-setup/install.sh
+  register: emacs_install_result
+
+# - name: Link emacs-setup
+#   file:
+#     src: ~/playbook/emacs-setup
+#     dest: ~/.emacs.d
+#     state: link

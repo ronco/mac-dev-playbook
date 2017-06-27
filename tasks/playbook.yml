@@ -1,0 +1,8 @@
+---
+# playbook.yml
+
+- name: Create playbook root dir
+  file:
+    path: ~/playbook
+    state: directory
+    mode: 0755
