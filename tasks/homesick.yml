@@ -2,8 +2,10 @@
 # homesick.yml
 
 - name: clone dotfiles
-  shell: bash -lc "homeshick clone ronco/dotfiles-castle"
+  shell: bash -lc "homeshick clone ronco/dotfiles-castle --force"
   sudo: no
+  args:
+    creates: "~/.homesick/repos/dotfiles-castle"
 
 - name: link dotfiles
   shell: bash -lc "homeshick link dotfiles-castle --force"
