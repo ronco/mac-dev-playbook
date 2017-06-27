@@ -17,7 +17,7 @@
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-    - role: fubarhouse.macdoc
+    - role: fubarhouse.macdock
       tags: ['macdoc']
 
   tasks:
