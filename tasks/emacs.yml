@@ -13,7 +13,9 @@
 
 - name: Install emacs config
   shell: >
-    ~/playbook/emacs-setup/install.sh
+    ./install.sh
+  args:
+    chdir: ~/playbook/emacs-setup
   register: emacs_install_result
 
 # - name: Link emacs-setup

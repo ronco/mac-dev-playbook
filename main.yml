@@ -16,6 +16,8 @@
       tags: ['homebrew']
     - role: fubarhouse.macdock
       tags: ['macdoc']
+    - role: kosssi.gitconfig
+      tags: ['git']
 
   tasks:
     - include: tasks/ansible-setup.yml
@@ -25,10 +27,6 @@
 
     - include: tasks/terminal.yml
       when: configure_terminal
-
-    - include: tasks/osx.yml
-      when: configure_osx
-      tags: ['osx']
 
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
@@ -44,6 +42,10 @@
     - include: tasks/homesick.yml
       when: configure_homesick
       tags: ['homesick']
+
+    - include: tasks/osx.yml
+      when: configure_osx
+      tags: ['osx']
 
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"

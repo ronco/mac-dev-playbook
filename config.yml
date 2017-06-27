@@ -8,6 +8,7 @@ configure_osx: yes
 configure_oh_my_zsh: yes
 configure_emacs: yes
 configure_homesick: yes
+configure_git: yes
 
 configure_iterm: yes
 iterm2_overwite_configuration: no
@@ -22,8 +23,17 @@ iterm2_overwite_configuration: no
 #   - .tmux.conf
 #   - .zshrc
 
+git_config:
+  user:
+    name: Ron White
+    email: ron@ibotta.com
+  core:
+    editor: emacs
+
+
 homebrew_installed_packages:
   - ack
+  - ag
   - aspell
   - awscli
   - blackbox
@@ -66,17 +76,19 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - aerial
-  - dropbox
+  # - dropbox
   - firefox
   - font-menlo-for-powerline
-  - google-chrome
+  # - google-chrome
   - hammerspoon
   - iterm2
   - sequel-pro
-  - slack
+  # - slack
   - spotify
   - virtualbox
   - emacs
+  - karabiner-elements
+  - 1password
 
 dockitems_to_remove:
   - Launchpad
