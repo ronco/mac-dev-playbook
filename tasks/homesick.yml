@@ -1,0 +1,9 @@
+---
+# homesick.yml
+
+- name: clone dotfiles
+  shell: bash -lc "homeshick clone ronco/dotfiles-castle"
+  sudo: no
+
+- name: link dotfiles
+  shell: bash -lc "homeshick link dotfiles-castle --force"

@@ -14,9 +14,6 @@
   roles:
     - role: geerlingguy.homebrew
       tags: ['homebrew']
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
-      tags: ['dotfiles']
     - role: fubarhouse.macdock
       tags: ['macdoc']
 
@@ -43,6 +40,10 @@
     - include: tasks/emacs.yml
       when: configure_emacs
       tags: ['emacs']
+
+    - include: tasks/homesick.yml
+      when: configure_homesick
+      tags: ['homesick']
 
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"

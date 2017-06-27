@@ -7,6 +7,7 @@ configure_terminal: no
 configure_osx: yes
 configure_oh_my_zsh: yes
 configure_emacs: yes
+configure_homesick: yes
 
 configure_iterm: yes
 iterm2_overwite_configuration: no
@@ -33,6 +34,7 @@ homebrew_installed_packages:
   - gpg
   - gpg-agent
   - highlight
+  - homeshick
   - hub
   - sqlite
   - mas
