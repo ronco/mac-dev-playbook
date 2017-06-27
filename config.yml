@@ -24,6 +24,7 @@ iterm2_overwite_configuration: no
 
 homebrew_installed_packages:
   - ack
+  - aspell
   - awscli
   - blackbox
   - cask
@@ -51,6 +52,7 @@ homebrew_installed_packages:
   - tmux
   - tree
   - wget
+  - z
   - zsh
 
 homebrew_taps:
@@ -63,10 +65,12 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - aerial
   - dropbox
   - firefox
   - font-menlo-for-powerline
   - google-chrome
+  - hammerspoon
   - iterm2
   - sequel-pro
   - slack
