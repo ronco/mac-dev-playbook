@@ -89,6 +89,8 @@ homebrew_cask_apps:
   - emacs
   - karabiner-elements
   - 1password
+  - istat-menus
+  - bartender
 
 dockitems_to_remove:
   - Launchpad
