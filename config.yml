@@ -72,6 +72,7 @@ homebrew_taps:
   - homebrew/binary
   - homebrew/dupes
   - homebrew/versions
+  - railwaycat/emacsmacport
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -86,7 +87,7 @@ homebrew_cask_apps:
   # - slack
   - spotify
   - virtualbox
-  - emacs
+  - emacs-mac
   - karabiner-elements
   - 1password
   - istat-menus
