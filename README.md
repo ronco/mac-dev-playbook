@@ -1,6 +1,6 @@
-# blimmer's Mac Development Ansible Playbook
+# roncos's Mac Development Ansible Playbook
 
-[![Build Status](https://travis-ci.org/blimmer/mac-dev-playbook.svg?branch=blimmer-master)](https://travis-ci.org/blimmer/mac-dev-playbook)
+[![Build Status](https://travis-ci.org/ronco/mac-dev-playbook.svg?branch=ronco-master)](https://travis-ci.org/ronco/mac-dev-playbook)
 
 This is a fork of [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook), customized for my needs.
 
