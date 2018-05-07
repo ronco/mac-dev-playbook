@@ -67,6 +67,7 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 
 Applications (installed with Homebrew Cask):
 
+  - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
   - [Docker](https://www.docker.com/)
   - [Dropbox](https://www.dropbox.com/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -83,13 +84,11 @@ Applications (installed with Homebrew Cask):
   - [Sublime Text](https://www.sublimetext.com/)
   - [Transmit](https://panic.com/transmit/) (S/FTP client)
   - [Vagrant](https://www.vagrantup.com/)
-  - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 Packages (installed with Homebrew):
 
   - autoconf
   - bash-completion
-  - chromedriver
   - doxygen
   - gettext
   - gifsicle
@@ -105,6 +104,7 @@ Packages (installed with Homebrew):
   - nmap
   - node
   - nvm
+  - php
   - ssh-copy-id
   - cowsay
   - readline
